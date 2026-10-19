@@ -1,0 +1,32 @@
+2026/08/17 17:07:27 [error] 27006#0: *1 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:5001/", host: "localhost"
+2026/08/17 17:07:27 [error] 27006#0: *1 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:5001/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/08/17 17:12:02 [notice] 27657#0: signal process started
+2026/08/17 17:15:37 [notice] 28168#0: signal process started
+2026/08/17 17:15:37 [error] 28168#0: open() "/Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/logs/nginx.pid" failed (2: No such file or directory)
+2026/08/17 17:17:18 [notice] 28607#0: signal process started
+2026/08/17 17:17:18 [error] 28607#0: open() "/Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/logs/nginx.pid" failed (2: No such file or directory)
+2026/08/17 17:19:00 [notice] 29243#0: signal process started
+2026/08/17 17:20:52 [notice] 29840#0: signal process started
+2026/08/17 17:24:05 [error] 30183#0: *1 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:5001/", host: "localhost"
+2026/08/17 17:24:51 [notice] 30796#0: signal process started
+2026/08/17 17:51:26 [notice] 32635#0: signal process started
+2026/08/17 17:53:29 [notice] 33340#0: signal process started
+2026/08/17 17:56:11 [error] 33664#0: *3 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 10.156.92.168, server: api.abcd.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:5002/", host: "api.abcd.com"
+2026/08/17 17:58:53 [notice] 34670#0: signal process started
+2026/08/17 18:08:14 [notice] 36226#0: signal process started
+2026/08/24 16:56:50 [emerg] 39903#0: unknown directive "return" in /Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/conf/nginx.conf:46
+2026/08/24 16:57:27 [alert] 41591#0: sysctlbyname(net.inet.tcp.sendspace) failed (1: Operation not permitted)
+2026/08/24 16:58:12 [emerg] 41703#0: unknown directive "return" in /Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/conf/nginx.conf:46
+2026/08/24 16:58:20 [emerg] 41824#0: unknown directive "return" in /Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/conf/nginx.conf:46
+2026/08/24 16:59:07 [emerg] 42129#0: unknown directive "return" in /Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/conf/nginx.conf:46
+2026/08/24 16:59:45 [alert] 43742#0: sysctlbyname(net.inet.tcp.sendspace) failed (1: Operation not permitted)
+2026/08/24 16:59:51 [alert] 44556#0: sysctlbyname(net.inet.tcp.sendspace) failed (1: Operation not permitted)
+2026/08/24 16:59:57 [alert] 45397#0: sysctlbyname(net.inet.tcp.sendspace) failed (1: Operation not permitted)
+2026/08/24 17:00:16 [emerg] 45705#0: the "ssl" parameter requires ngx_http_ssl_module in /Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/conf/nginx.conf:82
+2026/08/24 17:12:03 [emerg] 49632#0: unknown directive "return" in /Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/conf/nginx.conf:42
+2026/08/24 17:17:13 [notice] 54567#0: signal process started
+2026/08/24 17:20:09 [notice] 54993#0: signal process started
+2026/08/24 18:11:00 [error] 56603#0: *2 open() "/Users/jenilbuha/Desktop/sem7/Mlops/p3/nginx-1.30.4/static/a" failed (2: No such file or directory), client: 10.21.56.22, server: abcd.com, request: "GET /static/a HTTP/1.1", host: "abcd.com"
+2026/08/24 18:11:25 [notice] 56770#0: signal process started
+2026/09/21 16:49:46 [notice] 20992#0: signal process started
+2026/09/21 16:51:13 [notice] 21541#0: signal process started

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Predictions</title>
+</head>
+<body>
+    <h1>Saved Predictions</h1>
+    <p><a href="/">Make another prediction</a></p>
+    {% if records %}
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Sepal Length</th>
+                <th>Sepal Width</th>
+                <th>Petal Length</th>
+                <th>Petal Width</th>
+                <th>Prediction</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in records %}
+            <tr>
+                <td>{{ record.id }}</td>
+                <td>{{ record.sepal_length }}</td>
+                <td>{{ record.sepal_width }}</td>
+                <td>{{ record.petal_length }}</td>
+                <td>{{ record.petal_width }}</td>
+                <td>{{ record.prediction }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No saved predictions yet.</p>
+    {% endif %}
+</body>
+</html>

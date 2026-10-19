@@ -1,0 +1,53 @@
+# 1) WITHOUT a volume: 
+#
+# services:
+#   dbapp:
+#     build:
+#       context: ./dbapp
+#     ports:
+#       - "5002:5002"
+#       networks:
+#         - custom
+# #
+#   webapp:
+#     build:
+#       context: ./webapp
+#     ports:
+#       - "5001:5001"
+#     environment:
+#       DB_API_URL: http://dbapp:5002
+#     depends_on:
+#       - dbapp
+      # networks:
+      #   - custom
+# networks:
+#   custom:        
+
+# 2) WITH a named volume: database files persist when containers are removed.
+services:
+  dbapp:
+    build:
+     context: ./dbapp
+    ports:
+      - "5002:5002"
+    networks:
+      - custom
+    volumes:
+      - prediction_data:/app/instance
+
+  webapp:
+    build:
+      context: ./webapp
+    ports:
+     - "5001:5001"
+    environment:
+      DB_API_URL: http://dbapp:5002
+    depends_on:
+      - dbapp
+    networks:
+      - custom
+
+volumes:
+  prediction_data:
+networks:
+  custom:  

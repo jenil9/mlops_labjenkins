@@ -1,0 +1,12 @@
+Iris.csv
+
+p2_venv
+
+uv.lock
+pyproject.toml
+
+.python-version
+.gitignore
+.venv
+
+nginx-1.30.4
